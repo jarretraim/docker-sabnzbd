@@ -30,6 +30,3 @@ ADD ./start.sh /start.sh
 RUN chmod u+x  /start.sh
 
 EXPOSE 8080
-
-CMD ['sabnzbdplus --config-file "/mnt/config/sabnzbd.ini" --server :8080']
-
