@@ -15,9 +15,7 @@ RUN add-apt-repository ppa:jcfp/ppa
 
 RUN apt-get -qq update
 
-RUN apt-get install -qqy --force-yes sabnzbdplus sabnzbdplus-theme-mobile \
-sabnzbdplus-theme-smpl sabnzbdplus-theme-plush sabnzbdplus-theme-iphone \
-par2 python-yenc unzip unrar
+RUN apt-get install -qqy --force-yes sabnzbdplus sabnzbdplus-theme-mobile sabnzbdplus-theme-smpl sabnzbdplus-theme-plush sabnzbdplus-theme-iphone par2 python-yenc unzip unrar
 
 RUN apt-get clean &&\
   rm -rf /var/lib/apt/lists/* &&\
