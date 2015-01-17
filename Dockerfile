@@ -24,6 +24,7 @@ RUN apt-get clean &&\
   rm -rf /tmp/*
 
 VOLUME /mnt/config
+VOLUME /mnt/downloading
 VOLUME /mnt/local
 VOLUME /mnt/nas
 
